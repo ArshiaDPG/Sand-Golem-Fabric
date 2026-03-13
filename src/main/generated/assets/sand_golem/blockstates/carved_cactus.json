@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "sand_golem:block/carved_cactus",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "sand_golem:block/carved_cactus"
+    },
+    "facing=south": {
+      "model": "sand_golem:block/carved_cactus",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "sand_golem:block/carved_cactus",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "sand_golem",
+  "version": "${version}",
+  "name": "Sand Golem",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "Apache-2.0",
+  "icon": "assets/sand_golem/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "org.digitalpear.sand_golem.client.SandGolemDataGenerator"
+    ],
+    "client": [
+      "org.digitalpear.sand_golem.client.SandGolemClient"
+    ],
+    "main": [
+      "org.digitalpear.sand_golem.SandGolem"
+    ]
+  },
+  "mixins": [
+    "sand_golem.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}

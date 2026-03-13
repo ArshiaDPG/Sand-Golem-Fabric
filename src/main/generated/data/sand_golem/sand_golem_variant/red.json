@@ -1,0 +1,12 @@
+{
+  "layer_state": {
+    "Name": "sand_golem:red_sand_layer",
+    "Properties": {
+      "layers": "1"
+    }
+  },
+  "summoning_state": {
+    "Name": "minecraft:red_sand"
+  },
+  "texture": "sand_golem:textures/entity/sand_golem/red"
+}

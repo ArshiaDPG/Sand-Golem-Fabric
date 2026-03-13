@@ -1,0 +1,6 @@
+{
+  "parent": "sand_golem:block/layer_height10",
+  "textures": {
+    "texture": "minecraft:block/red_sand"
+  }
+}
