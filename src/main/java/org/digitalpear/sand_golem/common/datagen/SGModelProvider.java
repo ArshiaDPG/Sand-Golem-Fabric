@@ -46,7 +46,7 @@ public class SGModelProvider extends FabricModelProvider {
         blockModelGenerators.blockStateOutput.accept(MultiVariantGenerator.dispatch(block).with(PropertyDispatch.initial(BlockStateProperties.LAYERS).generate((height) -> {
             MultiVariant var2;
             if (height < 8) {
-                var2 = BlockModelGenerators.plainVariant(SGModelTemplates.HEIGHT_TO_MODEL.get(height * 2).createWithSuffix(block, "_height" + height * 2, textureMapping, blockModelGenerators.modelOutput));
+                var2 = BlockModelGenerators.plainVariant(SGModelTemplates.HEIGHT_TO_MODEL.get(height-1).createWithSuffix(block, "_height" + height * 2, textureMapping, blockModelGenerators.modelOutput));
             } else {
                 var2 = fullBlockModelLocation;
             }

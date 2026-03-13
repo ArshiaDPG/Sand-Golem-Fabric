@@ -31,10 +31,10 @@ public class SandGolemHeadLayer extends RenderLayer<SandGolemRenderState, SnowGo
             if (!sandGolemRenderState.isInvisible || sandGolemRenderState.appearsGlowing()) {
                 poseStack.pushPose();
                 this.getParentModel().getHead().translateAndRotate(poseStack);
-                float h = 0.625F;
+                float blockScale = 0.625F;
                 poseStack.translate(0.0F, -0.34375F, 0.0F);
                 poseStack.mulPose(Axis.YP.rotationDegrees(180.0F));
-                poseStack.scale(0.625F, -0.625F, -0.625F);
+                poseStack.scale(blockScale, -blockScale, -blockScale);
                 BlockState blockState = SGBlocks.CARVED_CACTUS.defaultBlockState();
                 BlockStateModel blockStateModel = this.blockRenderer.getBlockModel(blockState);
                 int j = LivingEntityRenderer.getOverlayCoords(sandGolemRenderState, 0.0F);
